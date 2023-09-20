@@ -1,0 +1,103 @@
+.addprofile {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add {
+  max-width: 544px;
+  min-width: 400;
+  padding: 16px 24px;
+  border-radius: 16px;
+  background: #fff;
+
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 32px -8px rgba(0, 0, 0, 0.12),
+    0px 32px 32px -8px rgba(0, 0, 0, 0.08);
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      color: var(--light-bulma, #231f20);
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Figtree;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 160% */
+    }
+  }
+
+  .segments {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & > div {
+      flex-basis: 50%;
+    }
+
+    .sub {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h4 {
+        color: var(--light-bulma, #231f20);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Figtree;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .underline {
+        // background-color: #3f84f8;
+        border-radius: 30px;
+        background: #d9d9d9;
+        height: 4px;
+        width: 100%;
+        &--active{
+          background-color: #3f84f8;
+        }
+      }
+    }
+
+    // .segment {
+    //   flex: 1;
+    // }
+  }
+  .btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    .secondary {
+      border-radius: 8px;
+      border: 1px solid var(--light-trunks, #999ca0);
+      display: flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      color: var(--light-bulma, #231f20);
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Figtree;
+      font-size: 14px;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
