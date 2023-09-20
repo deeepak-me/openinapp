@@ -38,7 +38,7 @@ const LoginComponent = () => {
         </div>
         {/* </div> */}
         <p className="forgot">Forgot password?</p>
-        <Button className="btn"/>
+        <Button className="btn">Sign In</Button>
       </div>
 
       <p className="signin">
