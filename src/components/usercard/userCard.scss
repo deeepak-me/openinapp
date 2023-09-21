@@ -1,0 +1,172 @@
+.userCard {
+  display: flex;
+  flex-direction: column;
+
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  //   display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding: 48px 80px 48px 41px;
+  //   gap: 58px;
+
+  .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // padding: 48px 80px 48px 41px;
+    gap: 58px;
+
+    .title {
+      margin: 0;
+      color: #000;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Figtree;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .segment {
+        .user {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 48px 80px 48px 41px;
+          gap: 58px;
+        }
+        display: flex;
+        flex-direction: column;
+        //   align-items: center;
+        gap: 22px;
+
+        .content {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+          gap: 12px;
+
+          .icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .whatsapp {
+            background: #e9f9eb;
+          }
+
+          .mail {
+            background: #ebe6f9;
+          }
+
+          .insta {
+            background: #ffe9ec;
+          }
+
+          .youtube {
+            background: #ffe9e9;
+          }
+
+          .subtitle {
+            margin: 0;
+            color: var(--light-bulma, #231f20);
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Figtree;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+            text-decoration-line: underline;
+          }
+        }
+      }
+    }
+  }
+
+  //   .title {
+  //     margin: 0;
+  //     color: #000;
+  //     font-feature-settings: "clig" off, "liga" off;
+  //     font-family: Figtree;
+  //     font-size: 24px;
+  //     font-weight: 600;
+  //     line-height: 24px;
+  //   }
+
+  //   .info {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: space-between;
+
+  //     .segment {.user {
+  //         display: flex;
+  //         flex-direction: column;
+  //         justify-content: center;
+  //         padding: 48px 80px 48px 41px;
+  //         gap: 58px;
+  //       }
+  //       display: flex;
+  //       flex-direction: column;
+  //       //   align-items: center;
+  //       gap: 22px;
+
+  //       .content {
+  //         display: flex;
+  //         align-items: center;
+  //         // justify-content: space-between;
+  //         gap: 12px;
+
+  //         .icon {
+  //           width: 28px;
+  //           height: 28px;
+  //           border-radius: 50%;
+  //           display: flex;
+  //           align-items: center;
+  //           justify-content: center;
+  //         }
+
+  //         .whatsapp {
+  //           background: #e9f9eb;
+  //         }
+
+  //         .mail {
+  //           background: #ebe6f9;
+  //         }
+
+  //         .insta {
+  //           background: #ffe9ec;
+  //         }
+
+  //         .youtube {
+  //           background: #ffe9e9;
+  //         }
+
+  //         .subtitle {
+  //           margin: 0;
+  //           color: var(--light-bulma, #231f20);
+  //           font-feature-settings: "clig" off, "liga" off;
+  //           font-family: Figtree;
+  //           font-size: 14px;
+  //           font-style: normal;
+  //           font-weight: 400;
+  //           line-height: 24px; /* 171.429% */
+  //           text-decoration-line: underline;
+  //         }
+  //       }
+  //     }
+  //   }
+}
