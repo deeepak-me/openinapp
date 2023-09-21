@@ -26,7 +26,7 @@ const LoginComponent = () => {
           <GoogleLogin
             onSuccess={() => {
               login();
-              navigate("/");
+              navigate("/openinapp/");
             }}
             onError={() => {
               logOut();

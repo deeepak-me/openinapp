@@ -7,7 +7,7 @@ import { AppContext } from "./context/appContext";
 const RequireAuth = ({ children }) => {
   const { isLoggedIn } = useContext(AppContext);
 
-  return isLoggedIn ? children : <Navigate to="/login" />;
+  return isLoggedIn ? children : <Navigate to="/openinapp/login" />;
 };
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
     <div id="app" className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/">
+          <Route path="/openinapp/">
             <Route
               index
               element={
@@ -25,7 +25,7 @@ const App = () => {
               }
             />
 
-            <Route path="login" element={<Login />} />
+            <Route path="/openinapp/login" element={<Login />} />
           </Route>
         </Routes>
       </BrowserRouter>
