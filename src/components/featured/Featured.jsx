@@ -8,7 +8,6 @@ const data = [
   { name: "Custom Short Pants", value: 31, color: "#F6DC7D" },
   { name: "Super Hoodies", value: 14, color: "#EE8484" },
 ];
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 const Featured = () => {
   return (

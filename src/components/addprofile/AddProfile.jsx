@@ -90,8 +90,6 @@ const AddProfile = ({ onSubmit, ...props }) => {
             <Button onClick={() => onSubmit({ ...profile })}>Done</Button>
           </div>
         )}
-
-        {/* <Button /> */}
       </div>
     </div>
   );

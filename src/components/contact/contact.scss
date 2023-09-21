@@ -7,7 +7,7 @@
   align-items: flex-start;
   gap: 24px;
   margin-bottom: 24px;
-  //   flex-shrink: 0;
+
   .firstSeg {
     width: 100%;
     .forms {
@@ -16,9 +16,8 @@
         font-feature-settings: "clig" off, "liga" off;
         font-family: Figtree;
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 24px; /* 150% */
+        line-height: 24px;
 
         span {
           color: #999ca0;

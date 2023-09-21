@@ -31,9 +31,8 @@
       font-feature-settings: "clig" off, "liga" off;
       font-family: Figtree;
       font-size: 20px;
-      font-style: normal;
       font-weight: 600;
-      line-height: 32px; /* 160% */
+      line-height: 32px; 
     }
   }
 
@@ -61,7 +60,7 @@
       }
 
       .underline {
-        // background-color: #3f84f8;
+        
         border-radius: 30px;
         background: #d9d9d9;
         height: 4px;
@@ -72,9 +71,7 @@
       }
     }
 
-    // .segment {
-    //   flex: 1;
-    // }
+
   }
   .btn-wrap {
     display: flex;
