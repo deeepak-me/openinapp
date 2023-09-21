@@ -18,10 +18,6 @@ const LoginComponent = () => {
       <p className="subtitle">Sign in to your account</p>
 
       <div className="accounts">
-        {/* <div className="google" id="signInDiv">
-          <img src={Google} />
-          <p className="signin">Sign in with Google</p>
-        </div> */}
         <GoogleOAuthProvider clientId="41524999149-o0gevtj7jt3268k0t2dbc5103ibh7ukt.apps.googleusercontent.com">
           <GoogleLogin
             onSuccess={() => {
@@ -54,7 +50,7 @@ const LoginComponent = () => {
             <input type="password" placeholder="" className="inputs" />
           </div>
         </div>
-        {/* </div> */}
+
         <p className="forgot">Forgot password?</p>
         <Button className="btn">Sign In</Button>
       </div>

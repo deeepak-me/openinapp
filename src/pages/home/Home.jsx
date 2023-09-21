@@ -65,11 +65,6 @@ const Home = ({ onClick }) => {
           ) : (
             <UserCard currProfile={currProfile} />
           )}
-
-          {/* <AddUser onClick={() => setOpen(true)} /> */}
-          {/* {JSON.stringify(currProfile || {}, null, 4)} */}
-          {/* <UserCard currUsers={currUsers} /> */}
-          {/* <UserCard currProfile={currProfile} /> */}
         </div>
 
         {open && (

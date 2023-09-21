@@ -9,7 +9,6 @@ import Instagram from "../../images/instagram.svg";
 const UserCard = ({ currProfile: user }) => {
   return (
     <div className="userCard">
-      {/* {currProfile.map((user) => ( */}
       <div className="user">
         <h2 className="title">{user.name}</h2>
         <div className="info">
@@ -43,7 +42,6 @@ const UserCard = ({ currProfile: user }) => {
           </div>
         </div>
       </div>
-      {/* ))} */}
     </div>
   );
 };
