@@ -1,12 +1,3 @@
 {
-  "users": [
-    {
-      "name": "alen",
-      "phone": "415527132",
-      "email": "adha.@hdan.com",
-      "instagram": "hnc.ic",
-      "youtube": "jacna.youytub",
-      "id": 1
-    }
-  ]
+  "users": []
 }
