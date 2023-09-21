@@ -8,11 +8,6 @@ const Basic = ({ onChange }) => {
     phone: "",
     email: "",
   });
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:8000/users")
-  //     .then((res) => console.log(res.data));
-  // }, []);
 
   const handleInput = (event) => {
     setPost({ ...post, [event.target.name]: event.target.value });
@@ -20,20 +15,8 @@ const Basic = ({ onChange }) => {
     onChange({ ...post });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   try {
-  //     const response = await axios.post("http://localhost:8000/users", post);
-  //     // setCardData(response.data);
-  //   } catch (error) {
-  //     console.error("Error submitting form:", error);
-  //   }
-  // };
-
   return (
     <div className="basic">
-      {/* // <div className="basic"> */}
       <div className="firstSeg">
         <div className="forms">
           <p className="heading">Enter Name*</p>

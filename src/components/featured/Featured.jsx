@@ -52,15 +52,6 @@ const Featured = () => {
           ))}
         </div>
       </div>
-      {/* </div> */}
-      {/* <div className="right">
-          <ul>
-            <li>Basic Tees</li>
-            <li>Custom Short Pants</li>
-            <li>Super Hoodies</li>
-          </ul>
-        </div>
-      </div> */}
     </div>
   );
 };

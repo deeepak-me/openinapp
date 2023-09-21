@@ -5,7 +5,6 @@ import CloseIcon from "../../images/close.svg";
 import Button from "../button/Button";
 import Basic from "../basic/Basic";
 import Contact from "../contact/Contact";
-import axios from "axios";
 
 const AddProfile = ({ onSubmit, ...props }) => {
   const [currentState, setCurrentState] = useState(1);
@@ -42,28 +41,7 @@ const AddProfile = ({ onSubmit, ...props }) => {
 
   function handleFormChange(partialForm) {
     setProfile({ ...profile, ...partialForm });
-
-    // onSubmit({ ...profile });
   }
-
-  // const [post, setPost] = useState({
-  //   name: "",
-  //   phone: "",
-  //   email: "",
-  //   instagram: "",
-  //   youtube: "",
-  // });
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:8000/users")
-  //     .then((res) => console.log(res.data));
-  // }, []);
-
-  // const handleIndput = (event) => {
-  //   setPost({ ...post, [event.target.name]: event.target.value });
-  // };
-
-  // const handleSubmit
 
   return (
     <div className="addprofile">

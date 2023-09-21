@@ -3,14 +3,11 @@
   flex: 1;
   justify-content: space-between;
   padding: 18px 21px 18px 27px;
-  // -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-  // box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-  // filter: drop-shadow(3px 4px 11px rgba(98, 98, 98, 0.15));
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 
   border-radius: 20px;
-  // height: 100px;
+
   border: 2px solid #e0e0e0;
 
   .left {
@@ -18,13 +15,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // gap: 7px;
 
     .icon {
       width: 32px;
       height: 32px;
       border-radius: 50% 50%;
-      // background-color: green;
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -34,52 +30,21 @@
       color: #000;
       font-family: Lato;
       font-size: 11px;
-      // font-style: normal;
+
       font-weight: 400;
-      // line-height: normal;
+
       margin-top: 8px;
     }
     .bottom {
-      // display: flex;
-      // align-items: center;
-      // justify-content: space-between;
-      // gap: 18px;
-
       .number {
         width: max-content;
         color: #000;
         font-family: Open Sans;
         font-size: 21px;
-        // font-style: normal;
+
         font-weight: 700;
-        // line-height: normal;
       }
     }
-
-    // .link {
-    //   width: max-content;
-    //   color: #000;
-    //   font-family: Open Sans;
-    //   font-size: 21px;
-    //   font-style: normal;
-    //   font-weight: 700;
-    //   line-height: normal;
-    // }
-
-    // .percentage {
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: end;
-    //   font-size: 14px;
-    // }
-
-    // .icon {
-    //   font-size: 18px;
-    //   padding: 5px;
-    //   //background-color: rgba(128, 0, 128, 0.342);
-    //   border-radius: 5px;
-    //   align-self: flex-end;
-    // }
   }
 
   .right {
@@ -93,14 +58,14 @@
       background: #e9f9eb;
       padding: 4px 8px;
       color: #3cc952;
-      // text-align: center;
+
       font-feature-settings: "clig" off, "liga" off;
       font-family: Figtree;
       font-size: 10px;
       font-weight: 600;
       line-height: 16px;
       letter-spacing: 0.5px;
-      // text-transform: uppercase;
+
       display: flex;
       justify-content: center;
       align-items: center;

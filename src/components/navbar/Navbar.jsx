@@ -16,10 +16,8 @@ const Navbar = () => {
             <div className="search item">
               <input type="text" placeholder="Search..." />
               <img src={SearchIcon} className="icon" />
-              {/* <SearchOutlinedIcon /> */}
             </div>
             <div className="item">
-              {/* <NotificationsNoneOutlinedIcon className="icon" /> */}
               <img src={Notification} className="icon" />
             </div>
 

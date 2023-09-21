@@ -5,7 +5,7 @@ import "./Home.scss";
 import Widget from "../../components/widgets/Widget";
 import Featured from "../../components/featured/Featured";
 import AddUser from "../../components/adduser/AddUser";
-import Bar from "../../components/bar/Bar";
+
 import AddProfile from "../../components/addprofile/AddProfile";
 import { likes, revenue, transaction, users } from "../../data/data";
 import BarChartBox from "../../components/barchart/BarChartBox";
@@ -43,17 +43,6 @@ const Home = ({ onClick }) => {
     }
   };
 
-  // const [currUsers, setCurrUsers] = useState([
-  //   {
-  //     id: "1",
-  //     name: "Joe Doe",
-  //     phone: "+91 29938 81234",
-  //     email: "john@xyz.com",
-  //     instagram: "john_official",
-  //     youtube: "john_official",
-  //   },
-  // ]);
-
   return (
     <div className="home">
       <Sidebar />
@@ -64,8 +53,6 @@ const Home = ({ onClick }) => {
           <Widget {...transaction} />
           <Widget {...likes} />
           <Widget {...users} />
-
-          {/* {JSON.stringify(currProfile || {}, null, 4)} */}
         </div>
         <div className="center">
           <BarChartBox />

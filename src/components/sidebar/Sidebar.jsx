@@ -20,22 +20,19 @@ const Sidebar = () => {
           <Link to="/dashboard" style={{ textDecoration: "none" }}>
             <li>
               <img src={DashboardIcon} className="icon" />
-              <span style={{color:"#FFFFFF"}}>Dashboard</span>
+              <span style={{ color: "#FFFFFF" }}>Dashboard</span>
             </li>
           </Link>
 
-          {/* <Link to="/users" style={{ textDecoration: "none" }}> */}
           <li>
             <img src={TransactionIcon} className="icon" />
             <span>Transactions</span>
           </li>
-          {/* </Link> */}
-          {/* <Link to="/products" style={{ textDecoration: "none" }}> */}
+
           <li>
             <img src={ScheduleIcon} className="icon" />
             <span>Schedules</span>
           </li>
-          {/* </Link> */}
 
           <li>
             <img src={UserIcon} className="icon" />
