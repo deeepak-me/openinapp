@@ -10,6 +10,7 @@ import AddProfile from "../../components/addprofile/AddProfile";
 import { likes, revenue, transaction, users } from "../../data/data";
 import BarChartBox from "../../components/barchart/BarChartBox";
 import axios from "axios";
+import UserCard from "../../components/usercard/UserCard";
 
 const Home = ({ onClick }) => {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,16 @@ const Home = ({ onClick }) => {
   useEffect(() => {
     axios
       .get("http://localhost:8000/users")
-      .then((res) => console.log(res.data));
+      .then((res) => {
+        console.log(res.data);
+        setCurrProfile(res.data[res.data.length - 1]);
+      })
+
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+
+    console.log(currProfile);
   }, []);
 
   const handleSubmit = async (profile) => {
@@ -33,6 +43,17 @@ const Home = ({ onClick }) => {
     }
   };
 
+  // const [currUsers, setCurrUsers] = useState([
+  //   {
+  //     id: "1",
+  //     name: "Joe Doe",
+  //     phone: "+91 29938 81234",
+  //     email: "john@xyz.com",
+  //     instagram: "john_official",
+  //     youtube: "john_official",
+  //   },
+  // ]);
+
   return (
     <div className="home">
       <Sidebar />
@@ -44,15 +65,26 @@ const Home = ({ onClick }) => {
           <Widget {...likes} />
           <Widget {...users} />
 
-          {JSON.stringify(currProfile || {}, null, 4)}
+          {/* {JSON.stringify(currProfile || {}, null, 4)} */}
         </div>
         <div className="center">
           <BarChartBox />
         </div>
         <div className="bottom">
           <Featured />
-          <AddUser onClick={() => setOpen(true)} />
+
+          {!currProfile ? (
+            <AddUser onClick={() => setOpen(true)} />
+          ) : (
+            <UserCard currProfile={currProfile} />
+          )}
+
+          {/* <AddUser onClick={() => setOpen(true)} /> */}
+          {/* {JSON.stringify(currProfile || {}, null, 4)} */}
+          {/* <UserCard currUsers={currUsers} /> */}
+          {/* <UserCard currProfile={currProfile} /> */}
         </div>
+
         {open && (
           <AddProfile onClose={() => setOpen(false)} onSubmit={handleSubmit} />
         )}
