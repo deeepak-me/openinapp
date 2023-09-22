@@ -18,7 +18,7 @@ const Home = ({ onClick }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/users")
+      .get("http://52.66.238.111/users")
       .then((res) => {
         console.log(res.data);
         setCurrProfile(res.data[res.data.length - 1]);
@@ -33,7 +33,7 @@ const Home = ({ onClick }) => {
 
   const handleSubmit = async (profile) => {
     try {
-      const response = await axios.post("http://localhost:8000/users", profile);
+      const response = await axios.post("http://52.66.238.111/users", profile);
 
       setCurrProfile(response.data);
 
