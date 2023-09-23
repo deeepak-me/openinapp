@@ -16,20 +16,20 @@ const Home = ({ onClick }) => {
   const [open, setOpen] = useState(false);
   const [currProfile, setCurrProfile] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get("http://52.66.238.111/users")
-      .then((res) => {
-        console.log(res.data);
-        setCurrProfile(res.data[res.data.length - 1]);
-      })
+  // useEffect(() => {
+  //   axios
+  //     .get("http://52.66.238.111/users")
+  //     .then((res) => {
+  //       console.log(res.data);
+  //       setCurrProfile(res.data[res.data.length - 1]);
+  //     })
 
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+  //     .catch((error) => {
+  //       console.error("Error fetching data:", error);
+  //     });
 
-    console.log(currProfile);
-  }, []);
+  //   console.log(currProfile);
+  // }, []);
 
   const handleSubmit = async (profile) => {
     try {
